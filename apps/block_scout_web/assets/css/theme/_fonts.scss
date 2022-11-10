@@ -1,2 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700');
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@font-face {
+	font-family: 'Roboto';
+	src: url('../static/fonts/Roboto-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-display: swap;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Nunito';
+	src: url('../static/fonts/Nunito-VariableFont_wght.ttf') format('truetype');
+	font-weight: 200 300 400 600 700;
+	font-display: swap;
+	font-style: normal;
+}
