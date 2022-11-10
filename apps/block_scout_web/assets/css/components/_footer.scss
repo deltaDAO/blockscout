@@ -123,20 +123,21 @@ $footer-legal-spacing: 10px;
 
 .footer-legal {
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
-	width: 100%;
 	margin-top: 25px;
-}
 
-.footer-legal a {
-	position: relative;
-	padding: 0 $footer-legal-spacing;
-}
-
-.footer-legal a:not(:last-child)::before {
-	content: '-';
-	position: absolute;
-	right: calc($footer-legal-spacing * -0.5);
-	translate: -50%;
+	a {
+		position: relative;
+		padding: 0 $footer-legal-spacing;
+		&:first-child {
+			padding-left: 0;
+		}
+		&:not(:last-child)::before {
+			content: '-';
+			position: absolute;
+			right: calc($footer-legal-spacing * -0.5);
+			translate: -50%;
+		}
+	}
 }

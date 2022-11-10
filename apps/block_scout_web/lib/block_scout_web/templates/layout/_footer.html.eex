@@ -31,6 +31,10 @@
             <div class="footer-social-icon-container fontawesome-icon telegram"></div>
           </a>
         </div>
+        <div class="footer-legal">
+          <a href="https://portal.minimal-gaia-x.eu/imprint" alt="imprint" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Imprint") %></a>
+          <a href="https://portal.minimal-gaia-x.eu/privacy" alt="privacy" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Privacy") %></a>
+        </div>
       </div>
 
       <div class="col-xs-12 col-md-4 col-lg-<%= col_size %> footer-list">
@@ -89,9 +93,5 @@
         <%= gettext("Version") %>: <%= release_link %>
       </div>
     <% end %>
-    <div class="footer-legal">
-      <a href="https://portal.minimal-gaia-x.eu/imprint" alt="imprint" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Imprint") %></a>
-      <a href="https://portal.minimal-gaia-x.eu/privacy" alt="privacy" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Privacy") %></a>
-    </div>
   </div>
 </footer>
