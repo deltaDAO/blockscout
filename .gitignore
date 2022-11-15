@@ -55,3 +55,4 @@ screenshots/
 .vscode
 
 .env
+env_vars.env
