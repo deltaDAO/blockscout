@@ -6,6 +6,7 @@ $footer-item-disc-color: $primary !default;
 $footer-social-icon-color: $footer-text-color !default;
 $footer-logo-height: 28px !default;
 $footer-logo-width: auto !default;
+$footer-legal-spacing: 10px;
 
 .footer {
   background: $footer-background-color;
@@ -106,7 +107,7 @@ $footer-logo-width: auto !default;
       &::before {
         background-color: $footer-item-disc-color;
         border-radius: 50%;
-        content: "";
+        content: '';
         display: block;
         height: 6px;
         margin: 0 10px 0 0;
@@ -118,4 +119,25 @@ $footer-logo-width: auto !default;
 
 .footer-brand {
   text-decoration: none !important;
+}
+
+.footer-legal {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 25px;
+
+  a {
+    position: relative;
+    padding: 0 $footer-legal-spacing;
+    &:first-child {
+      padding-left: 0;
+    }
+    &:not(:last-child)::before {
+      content: '-';
+      position: absolute;
+      right: calc($footer-legal-spacing * -0.5);
+      translate: -50%;
+    }
+  }
 }

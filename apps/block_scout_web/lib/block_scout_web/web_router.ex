@@ -485,6 +485,8 @@ defmodule BlockScoutWeb.WebRouter do
 
     get("/token-counters", Tokens.TokenController, :token_counters)
 
+    get("/privacy", PrivacyController, :index)
+
     get("/*path", PageNotFoundController, :index)
   end
 end
