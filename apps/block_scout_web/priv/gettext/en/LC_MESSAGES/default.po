@@ -3262,3 +3262,13 @@ msgstr ""
 #, elixir-autogen, elixir-format, fuzzy
 msgid "Library"
 msgstr ""
+
+#: lib/block_scout_web/templates/layout/_footer.html.eex:93
+#, elixir-autogen, elixir-format
+msgid "Imprint"
+msgstr ""
+
+#: lib/block_scout_web/templates/layout/_footer.html.eex:94
+#, elixir-autogen, elixir-format
+msgid "Privacy"
+msgstr ""
