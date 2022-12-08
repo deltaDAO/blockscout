@@ -2,6 +2,7 @@
 <% address_hash_str = "0x" <> Base.encode16(@token.contract_address_hash.bytes, case: :lower) %>
 <% {:ok, created_from_address} = if @token.contract_address_hash, do: Chain.hash_to_address(@token.contract_address_hash), else: {:ok, nil} %>
 <% created_from_address_hash = if from_address_hash(created_from_address), do: "0x" <> Base.encode16(from_address_hash(created_from_address).bytes, case: :lower), else: nil %>
+<% portal_asset_base_url = "https://portal.minimal-gaia-x.eu/asset/" %>
 <section class="address-overview" data-page="token-details" data-page-address-hash="<%= @token.contract_address_hash %>">
   <div class="row js-ad-dependant-mb-2 js-ad-dependant-mb-5-reverse">
     <div class="col-md-12 js-ad-dependant-mb-2">
@@ -142,6 +143,23 @@
             </dt>
             <dd class="col-sm-8 col-md-8 col-lg-9">
               <%= @token.type %>
+            </dd>
+          </dl>
+          <dl class="row">
+            <dt class="col-sm-4 col-md-4 col-lg-3 text-muted">
+              <%= render BlockScoutWeb.CommonComponentsView, "_i_tooltip_2.html",
+              text: gettext("The asset to which the token belongs") %>
+              <%= gettext("Asset") %>
+            </dt>
+            <dd class="col-sm-8 col-md-8 col-lg-9">
+              <a
+                class="btn-external-link btn-full-primary"
+                href="<%= portal_asset_base_url<>address_hash_str %>"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <%= render BlockScoutWeb.IconsView, "_external_link.html" %> <%= gettext("Open asset page") %>
+              </a>
             </dd>
           </dl>
         </div>
