@@ -6,6 +6,7 @@ defmodule Explorer.Chain.AddressTokenTransferCsvExporter do
   alias Explorer.{Chain, PagingOptions}
   alias Explorer.Chain.{Address, TokenTransfer}
   alias NimbleCSV.RFC4180
+  alias Explorer.AddressInfo
 
   @page_size 150
   @paging_options %PagingOptions{page_size: @page_size + 1, asc_order: true}
@@ -53,14 +54,17 @@ defmodule Explorer.Chain.AddressTokenTransferCsvExporter do
       "BlockNumber",
       "UnixTimestamp",
       "FromAddress",
+      "FromAddressName",
       "ToAddress",
+      "ToAddressName",
       "TokenContractAddress",
       "Type",
       "TokenSymbol",
       "TokensTransferred",
       "TransactionFee",
       "Status",
-      "ErrCode"
+      "ErrCode",
+      "TxInput"
     ]
 
     token_transfer_lists =
@@ -71,14 +75,17 @@ defmodule Explorer.Chain.AddressTokenTransferCsvExporter do
           token_transfer.transaction.block_number,
           token_transfer.transaction.block.timestamp,
           token_transfer.from_address_hash |> to_string() |> String.downcase(),
+          AddressInfo.address_to_name(token_transfer.from_address_hash |> to_string() |> String.downcase(), false),
           token_transfer.to_address_hash |> to_string() |> String.downcase(),
+          AddressInfo.address_to_name(token_transfer.to_address_hash |> to_string() |> String.downcase(), false),
           token_transfer.token_contract_address_hash |> to_string() |> String.downcase(),
           type(token_transfer, address.hash),
           token_transfer.token.symbol,
           token_transfer.amount,
           fee(token_transfer.transaction),
           token_transfer.transaction.status,
-          token_transfer.transaction.error
+          token_transfer.transaction.error,
+          token_transfer.transaction.input
         ]
       end)
 
