@@ -280,9 +280,24 @@ defmodule BlockScoutWeb.AddressView do
 
   def token_title(%Token{name: name, symbol: symbol}), do: "#{name} (#{symbol})"
 
+  def resolve_address_name_string(address) do
+    address_name = BlockScoutWeb.AddressInfo.address_to_name(address, true)
+    address_name
+  end
+
+  def resolve_address_name(%Hash{} = hash) do
+    string_hash = to_string(hash)
+    address_name = resolve_address_name_string(string_hash)
+    address_name
+  end
+
   def trimmed_hash(%Hash{} = hash) do
     string_hash = to_string(hash)
-    trimmed_hash(string_hash)
+    address_name = resolve_address_name_string(string_hash)
+    if string_hash === address_name do
+      trimmed_hash(string_hash)
+    end
+    address_name
   end
 
   def trimmed_hash(address) when is_binary(address) do
