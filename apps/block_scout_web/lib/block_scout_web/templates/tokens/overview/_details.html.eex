@@ -53,7 +53,7 @@
             </dt>
             <dd class="col-sm-8 col-md-8 col-lg-9 contract-address">
               <%= link(
-                  @token.contract_address_hash,
+                  BlockScoutWeb.AddressInfo.address_to_name(address_hash_str, true),
                   to: AccessHelpers.get_path(@conn, :address_path, :show,
                   Address.checksum(@token.contract_address_hash)),
                   "data-test": "token_contract_address"
