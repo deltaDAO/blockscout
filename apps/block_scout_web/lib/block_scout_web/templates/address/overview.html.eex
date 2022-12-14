@@ -4,6 +4,7 @@
   <% circles_addresses_list = CustomContractsHelpers.get_custom_addresses_list(:circles_addresses) %>
   <% current_address = "0x" <> Base.encode16(@address.hash.bytes, case: :lower) %>
   <% created_from_address_hash = if from_address_hash(@address), do: "0x" <> Base.encode16(from_address_hash(@address).bytes, case: :lower), else: nil %>
+  <% portal_profile_base_url = "https://portal.minimal-gaia-x.eu/profile/" %>
   <div class="row js-ad-dependant-mb-2 js-ad-dependant-mb-5-reverse">
     <!-- Address details -->
     <div class="col-md-12 js-ad-dependant-mb-2">
@@ -266,6 +267,25 @@
             </dl>
           <% end %>
           <div data-last-balance-update="<%= @address.fetched_coin_balance_block_number %>"></div>
+            <!-- Address profile -->
+            <dl class="row">
+              <dt class="col-sm-4 col-md-4 col-lg-3 text-muted">
+                <%= render BlockScoutWeb.CommonComponentsView, "_i_tooltip_2.html",
+                text: gettext("View related assets in the address profile") %>
+                <%= gettext("Address profile") %>
+              </dt>
+              <dd class="col-sm-8 col-md-8 col-lg-9">
+                <a
+                  class="btn-external-link btn-full-primary"
+                  href="<%= portal_profile_base_url<>current_address %>"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                > 
+                <%= render BlockScoutWeb.IconsView, "_external_link.html" %> <%= gettext("Open address profile") %>  
+                </a>
+                </span>
+              </dd>
+            </dl>
           <!-- Blocks Validated -->
           <dl class="row address-validation-count-item" style="display: none;">
             <dt class="col-sm-4 col-md-4 col-lg-3 text-muted">
