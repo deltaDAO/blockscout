@@ -13,6 +13,7 @@ defmodule Explorer.Chain.AddressTransactionCsvExporter do
   alias Explorer.Chain.{Address, Transaction, Wei}
   alias Explorer.ExchangeRates.Token
   alias NimbleCSV.RFC4180
+  alias Explorer.AddressInfo
 
   @necessity_by_association [
     necessity_by_association: %{
@@ -74,7 +75,9 @@ defmodule Explorer.Chain.AddressTransactionCsvExporter do
       "BlockNumber",
       "UnixTimestamp",
       "FromAddress",
+      "FromAddressName",
       "ToAddress",
+      "ToAddressName",
       "ContractAddress",
       "Type",
       "Value",
@@ -83,7 +86,8 @@ defmodule Explorer.Chain.AddressTransactionCsvExporter do
       "ErrCode",
       "CurrentPrice",
       "TxDateOpeningPrice",
-      "TxDateClosingPrice"
+      "TxDateClosingPrice",
+      "TxInput"
     ]
 
     transaction_lists =
@@ -96,7 +100,9 @@ defmodule Explorer.Chain.AddressTransactionCsvExporter do
           transaction.block_number,
           transaction.block.timestamp,
           to_string(transaction.from_address),
+          AddressInfo.address_to_name(to_string(transaction.from_address), false),
           to_string(transaction.to_address),
+          AddressInfo.address_to_name(to_string(transaction.to_address), false),
           to_string(transaction.created_contract_address),
           type(transaction, address.hash),
           Wei.to(transaction.value, :wei),
@@ -105,7 +111,8 @@ defmodule Explorer.Chain.AddressTransactionCsvExporter do
           transaction.error,
           exchange_rate.usd_value,
           opening_price,
-          closing_price
+          closing_price,
+          transaction.input
         ]
       end)
 

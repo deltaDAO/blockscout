@@ -51,8 +51,7 @@ a {
   color: $common-link-color;
   text-decoration: none;
 
-  &:hover,
-  &:focus {
+  &:hover {
     color: darken($common-link-color, 20%);
     text-decoration: underline;
   }
