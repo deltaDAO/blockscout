@@ -1,8 +1,3 @@
-defmodule BlockScoutWeb.AddressInfo do
-  @moduledoc """
-  A module for adding address info.
-  """
-
   @address_map %{
     # deltaDAO
     String.downcase("0x628677D9A9d93a913182fa04893Da0ce4E6570Ee") => "deltaDAO AG",
@@ -155,20 +150,3 @@ defmodule BlockScoutWeb.AddressInfo do
     String.downcase("0x44cf54BA87fcE6882dF59ECe877a71ceaD5045a7") => "v4 Dispenser contract",
     String.downcase("0x16575f77c27A3437FE1bE56AB983f1bEb0DD14B2") => "v4 ERC721Factory contract"
   }
-
-  def address_to_name(address, include_address) do
-    # Look up the name associated with the given address in the map
-    name = @address_map[String.downcase(address)]
-
-    # If a name is found, return it; otherwise, return the address itself
-    if name do
-      if include_address do
-        "#{name} (#{address})"
-      else
-        name
-      end
-    else
-      address
-    end
-  end
-end
