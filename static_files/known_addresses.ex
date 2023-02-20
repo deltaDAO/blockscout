@@ -130,6 +130,7 @@
     String.downcase("0x56e194D46fF305560f51D06cE84649C1DD91d2F8") => "Felt Labs",    
     String.downcase("0x61DB12d8b636Cb49ea09eCa58a893dA9480E1F33") => "BigchainDB",
     String.downcase("0xC8a08b33995594bfdB0ef9c18EB72da0469E396F") => "Deal ex Machina",
+    String.downcase("0x289Ff19C1e544B6E9488d5E79966491A2bAa88C9") => "Deloitte",
 
     # v3 contracts https://github.com/oceanprotocol/contracts/tree/v3/contracts
     String.downcase("0x325c09E2093C56AbDc86c5ccD68c77952e8034Af") => "v3 DTFactory contract",
