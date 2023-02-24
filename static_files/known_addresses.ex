@@ -28,6 +28,7 @@
     String.downcase("0xF62bF6371Ee020Cb2164Ac3C338514DBbb93A0D4") => "deltaDAO AG",
     String.downcase("0x4C84a36fCDb7Bc750294A7f3B5ad5CA8F74C4A52") => "deltaDAO AG",
     String.downcase("0x2859d961a6dBa6e7d30b2d383Af468edb4E7F4f6") => "deltaDAO AG",
+    String.downcase("0xa51815143e6C578D3c27A7b6fA6E4C1Dfcac555C") => "deltaDAO AG",
 
     # others
     String.downcase("0x4A806a4851472F7cFd579d3FF5465F03c3c2B5d4") => "PTW - TU Darmstadt",
