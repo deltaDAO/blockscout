@@ -29,6 +29,12 @@
     String.downcase("0x4C84a36fCDb7Bc750294A7f3B5ad5CA8F74C4A52") => "deltaDAO AG",
     String.downcase("0x2859d961a6dBa6e7d30b2d383Af468edb4E7F4f6") => "deltaDAO AG",
     String.downcase("0xa51815143e6C578D3c27A7b6fA6E4C1Dfcac555C") => "deltaDAO AG",
+    String.downcase("0x3dB4E0b1fC6072271BF51e9a0CC17E3c7C4C99f5") => "deltaDAO AG",
+
+    # EUROe - Membrane Finance
+    String.downcase("0x55253abd32bd5ff420b325fdeb7283d86c89cefe") => "Membrane Finance",
+    String.downcase("0xc911337e80bc964f1df775ba67ad46d50860da5a") => "Membrane Finance",
+
 
     # others
     String.downcase("0x4A806a4851472F7cFd579d3FF5465F03c3c2B5d4") => "PTW - TU Darmstadt",
