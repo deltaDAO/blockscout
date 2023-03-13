@@ -144,6 +144,19 @@ defmodule BlockScoutWeb.AddressInfo do
     String.downcase("0xC8a08b33995594bfdB0ef9c18EB72da0469E396F") => "Deal ex Machina",
     String.downcase("0x289Ff19C1e544B6E9488d5E79966491A2bAa88C9") => "Deloitte",
 
+    #GEN-X Validators
+    String.downcase("0x7D765CE9B18c2B2DB8C49d663351096F2639D5aA") => "deltaDAO AG Validator 1",
+    String.downcase("0xED8dfD6Dd61222618EFE07846efe78b6CAE25933") => "deltaDAO AG Validator 2",
+    String.downcase("0x4918d64413DA7763Eb674E2aA1c6B4e6B2E29f79") => "deltaDAO AG Validator 3",
+    String.downcase("0x2960C40843dCCC9f34F1932d10af13d3AB5B258a") => "EuProGigant Validator",
+    String.downcase("0x56eA3Cc92144Db3bA2bdE25131F40c7B98F7eD32") => "Exoscale Validator",
+    String.downcase("0x50C452ba6040f5F81E309eBF2F2b0D6A0EDd1302") => "Arsys Validator",
+    String.downcase("0x7d0fb02DFd5537AA5F27a0320e03F1D7E2346d88") => "IONOS Cloud Validator",
+    String.downcase("0x9c6a497fDc252E1D7150585EA9bDEddAE1dC53D1") => "WOBCOM Validator",
+    String.downcase("0x1cc0D061a75C577dB95847bE6B4f8D3Dc3c5Bf85") => "SBB Validator",
+    String.downcase("0x586000e6DA330E140b11a4aeEbb81963d67F336b") => "TU Wien Validator",
+    String.downcase("0x0a477f6297413f20C4fBc15F93e34dacE4136123") => "Software AG Validator",
+
     #OCEAN
     String.downcase("0x0995527d3473b3A98C471f1ED8787ACD77fBF009") => "Ocean contract",
 
