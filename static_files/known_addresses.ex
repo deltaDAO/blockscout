@@ -25,7 +25,6 @@
     String.downcase("0xa76Fa6837A6ffc9F123F2193717A5965c68B0cbA") => "deltaDAO AG",
     String.downcase("0xFaeb57c16D5E9A9f06c8c5dB12796f5a432Eb7d6") => "deltaDAO AG",
     String.downcase("0xb501FDaad0F0863C4c72f7EB9Abc23965DCa973d") => "deltaDAO AG",
-    String.downcase("0xF62bF6371Ee020Cb2164Ac3C338514DBbb93A0D4") => "deltaDAO AG",
     String.downcase("0x4C84a36fCDb7Bc750294A7f3B5ad5CA8F74C4A52") => "deltaDAO AG",
     String.downcase("0x2859d961a6dBa6e7d30b2d383Af468edb4E7F4f6") => "deltaDAO AG",
     String.downcase("0xa51815143e6C578D3c27A7b6fA6E4C1Dfcac555C") => "deltaDAO AG",
