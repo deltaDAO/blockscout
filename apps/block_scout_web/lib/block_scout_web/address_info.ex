@@ -30,7 +30,6 @@ defmodule BlockScoutWeb.AddressInfo do
     String.downcase("0xa76Fa6837A6ffc9F123F2193717A5965c68B0cbA") => "deltaDAO AG",
     String.downcase("0xFaeb57c16D5E9A9f06c8c5dB12796f5a432Eb7d6") => "deltaDAO AG",
     String.downcase("0xb501FDaad0F0863C4c72f7EB9Abc23965DCa973d") => "deltaDAO AG",
-    String.downcase("0xF62bF6371Ee020Cb2164Ac3C338514DBbb93A0D4") => "deltaDAO AG",
     String.downcase("0x4C84a36fCDb7Bc750294A7f3B5ad5CA8F74C4A52") => "deltaDAO AG",
     String.downcase("0x2859d961a6dBa6e7d30b2d383Af468edb4E7F4f6") => "deltaDAO AG",
     String.downcase("0xa51815143e6C578D3c27A7b6fA6E4C1Dfcac555C") => "deltaDAO AG",
@@ -143,6 +142,9 @@ defmodule BlockScoutWeb.AddressInfo do
     String.downcase("0x61DB12d8b636Cb49ea09eCa58a893dA9480E1F33") => "BigchainDB",
     String.downcase("0xC8a08b33995594bfdB0ef9c18EB72da0469E396F") => "Deal ex Machina",
     String.downcase("0x289Ff19C1e544B6E9488d5E79966491A2bAa88C9") => "Deloitte",
+    String.downcase("0xF62bF6371Ee020Cb2164Ac3C338514DBbb93A0D4") => "acatech",
+    String.downcase("0x6E1cE3530A12F89cF567788C132454E5dC7D3cCE") => "Spanish Ministry of Economic Affairs and Digital Transformation",
+    String.downcase("0xfc739f2F91921eb710878ad2Ca38C147a784C96f") => "Austrian Institute of Technology",
 
     #GEN-X Validators
     String.downcase("0x7D765CE9B18c2B2DB8C49d663351096F2639D5aA") => "deltaDAO AG Validator 1",
@@ -179,6 +181,7 @@ defmodule BlockScoutWeb.AddressInfo do
     String.downcase("0x94cb8FC8719Ed09bE3D9c696d2037EA95ef68d3e") => "v4 Dispenser contract",
     String.downcase("0x6cb85858183B82154921f68b434299EC4281da53") => "v4 ERC721Factory contract"
   }
+
 
 
   def address_to_name(address, include_address) do
