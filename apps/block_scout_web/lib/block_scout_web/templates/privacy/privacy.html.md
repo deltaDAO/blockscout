@@ -2,43 +2,53 @@
 
 This privacy policy informs you about how deltaDAO AG (in the following deltaDAO, we, us, our) processes your personal data when you visit our GEN-X Testnet Explorer (in the following explorer) and when you contact us. Moreover, this privacy policy informs you about your rights.
 
-_Last updated on November 11, 2022._
+_Last updated on June 22, 2022._
 
 # 1. Contact details of the controller and Data Protection Officer
 
 The controller pursuant to the EU General Data Protection Regulation ("GDPR") for the processing of your personal data is:
 
-deltaDAO AG
-Geibelstraße 46b
-22303 Hamburg
-Germany
-E-mail: contact@delta-dao.com
+deltaDAO AG  
+Katharinenstraße 30a  
+20457 Hamburg  
+Germany  
+E-mail: contact@delta-dao.com  
 
 If you have any questions about the protection of your personal data at deltaDAO, please contact our Data Protection Officer:
 
-Data Protection Officer
-deltaDAO AG
-Geibelstraße 46b
-22303 Hamburg
-Germany
-E-mail: privacy@delta-dao.com
+Data Protection Officer  
+deltaDAO AG  
+Katharinenstraße 30a  
+20457 Hamburg  
+Germany  
+E-mail: privacy@delta-dao.com  
 
 # 2. What's personal data?
 
 Personal data is any information that can be (directly or indirectly) related to you. deltaDAO processes a minimal amount of personal data, as we believe your personal data belongs to you. We process the following personal data.
 
-- **IP address:** Your IP address is processed when visiting our explorer.
+- **Usage data including your IP address:** Usage data including IP addresses are processed when visiting our explorer.
 - **E-mail:** If you contact deltaDAO via e-mail, we process your e-mail address and any personal data you decide to provide in your message (such as your name).
 
 For detailed information about the processing operations, lawfulness, purposes, and how your personal data serves to reach these purposes, please take a look at the chapter "Processing operations according to Article 13 GDPR".
 
 # 3. Recipients and cross-border data transfer
 
-**Visiting our explorer**
+**Visiting our explorer**  
 When visiting our explorer, we are processing your IP address with the support of Exoscale, a European cloud service provider that hosts our explorer. Our Exoscale server is located in Frankfurt, Germany.
 
-**Contact via e-mail**
-When you contact us via e-mail, our (mail) service provider Microsoft supports us in processing your personal data so we can communicate with you. We have restricted storage on the EEA and signed SCC with our provider. You have the right to receive a copy of these SCC. To exercise your right, please contact us at privacy@delta-dao.com.
+**Contact via e-mail**  
+When you contact us via e-mail, our (mail) service provider Microsoft (located at One Microsoft Way Redmond, WA 98052-6399, USA) supports us in processing your personal data so we can communicate with you. We have restricted storage on the EEA and signed SCC with our provider. You have the right to receive a copy of these SCC. To exercise your right, please contact us at <privacy@delta-dao.com>.
+
+- Here you can find Microsoft&#39;s current [**DPA including SCC** &#8599;](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA).
+- Here you can find Microsoft&#39;s [**privacy policy** &#8599;](https://privacy.microsoft.com/de-de/privacystatement).
+
+**Browsing to the GraphQL API**  
+When browsing to the [**GraphQL API** &#8599;](https://explorer.genx.minimal-gaia-x.eu/graphiql), usage data including your IP address is processed by Prospect One, a company established in Poland, to operate the cdn.jsdelivr.net service.
+
+- Here you can find Prospect One&#39;s [**privacy policy** &#8599;]( https://www.jsdelivr.com/terms/privacy-policy-jsdelivr-net).
+
+
 
 # 4. Processing operations according to Article 13 GDPR
 
@@ -69,6 +79,28 @@ Our legitimate interest is to answer your inquiries.
 
 **Retention period:**
 deltaDAO deletes your personal data as soon as we no longer require them for processing your inquiry, except deltaDAO is obliged to comply with legal retention periods or in case of legal disputes.
+
+## **4.3 Providing the GraphQL API**
+
+When you are browsing to the [**GraphQL API** &#8599;](https://explorer.genx.minimal-gaia-x.eu/graphiql), usage data is transmitted to Prospect One, a company established in Poland, operating the cdn.jsdelivr.net service. The usage data includes your
+-	IP address
+-	browser type and browser version
+-	referrer data (limited to domain)
+-	the URLs of the Service that you visit (limited to the cdn.jsdelivr.net domain)
+-	the time and date of your visit
+-	unique device identifiers
+-	other diagnostic data
+Prospect One never associates any gathered data with specific users of the service or tries to track their usage at any point and in any way.
+
+**Purpose:** Your personal data is transmitted to Prospect One as it is a technical requirement to provide the GraphQL API to you. Prospect One uses this data to operate the cdn.jsdelivr.net service.
+
+**Legal basis:** The legal basis for this processing is our legitimate interest, pursuant to Art. 6(1)(f) GDPR.
+
+**Legitimate interests:** Our legitimate interest is to provide the GraphQL API to you.
+
+**Retention period:** deltaDAO does not maintain your personal data after visiting the GraphQL API.
+Prospect One will retain your personal data only for as long as is necessary for the purpose set out above. Prospect One will also retain non-aggragated usage data for internal analysis purposes. Non-aggragated usage data is retained for a shorter period of time, until it is analyzed and deleted, except when this data is used to strengthen the security or to improve the functionality of the service, or if they are legally obligated to retain this data for longer time periods. For more information please refer to Prospect One&#39;s [**privacy policy** &#8599;]( https://www.jsdelivr.com/terms/privacy-policy-jsdelivr-net).
+
 
 # 5. Cookies and web storage
 
