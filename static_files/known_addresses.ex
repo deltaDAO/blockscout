@@ -88,7 +88,6 @@
     String.downcase("0x212c355c3ce41a272606da61F661dDd2b7F8a4B1") => "IKS – Gesellschaft für Informations- und Kommunikationssysteme mbH",
     String.downcase("0x44C34FbBB727bDC648E65feCfF3FB9D4c85f1fe4") => "msg David GmbH",
     String.downcase("0x8fBF860883BB71D691053A4363030Dc1c65f7017") => "Detecon",
-    String.downcase("0x2ee3c4F19f90237B7C45cfAD6B5dC4b5840563Ec") => "Perpetuum Progress",
     String.downcase("0x7DF1674a1e3449778eEB324652d3FF3Cb5046753") => "SINTEF",
     String.downcase("0xe3Df4851c094f5F6F1AC9AbfA4FC2075276195Ec") => "Peaq",
     String.downcase("0xB21282F443EB0D490819d98F2976758af5C979B3") => "Datarella",
@@ -108,7 +107,7 @@
     String.downcase("0x943CaA8afCAdd2F64a7cE9E53A91d5ea0BEb40c1") => "Eviden Germany GmbH",
     String.downcase("0x7A6246e02B2aA276203469Cfb839a2666520D8b5") => "Eviden Germany GmbH",
     String.downcase("0x9391291b0Df512B20810183744De8272774b6655") => "TU Delft",
-    String.downcase("0x61DB12d8b636Cb49ea09eCa58a893dA9480E1F33") => "Bigchain DB",
+    String.downcase("0x2ee3c4F19f90237B7C45cfAD6B5dC4b5840563Ec") => "Perpetuum Progress GmbH",
     String.downcase("0x203C7AA993EED06932FA327a192de9A8370b5Ab4") => "Mercedes-Benz Singapore Pte. Ltd.",
     String.downcase("0x4d6240C7Ef355a2E85c13B26A49A35908ce853E5") => "Mercedes-Benz Singapore Pte. Ltd.",
     String.downcase("0x2E33C6014222A47585605F8379a1877eaaF0ec13") => "Mercedes-Benz Singapore Pte. Ltd.",
@@ -174,6 +173,7 @@
     String.downcase("0xE64872A181F0695DA0660fE0B809a89A3bA359AA") => "Hochschule Offenburg (HSO)",
     String.downcase("0x533d456D3D5c16E6390647E2167678b7a76A4840") => "FeltLabs",
     String.downcase("0x56e194D46fF305560f51D06cE84649C1DD91d2F8") => "FeltLabs",
+    String.downcase("0x61DB12d8b636Cb49ea09eCa58a893dA9480E1F33") => "BigchainDB GmbH",
     String.downcase("0xC8a08b33995594bfdB0ef9c18EB72da0469E396F") => "Deal ex Machina",
     String.downcase("0x289Ff19C1e544B6E9488d5E79966491A2bAa88C9") => "Deloitte",
     String.downcase("0x2650e382770A04bE0f7E362ed578FB261A60F4b3") => "3D Mapping Solutions GmbH",
@@ -188,6 +188,7 @@
     String.downcase("0x3BB6944351d156fAF798f952C2838ef5bac68E40") => "Centre de Visió per Computador (CVC)",
     String.downcase("0xC09c6A1d5538E7ed135d6146241c8da11e92130B") => "Freie und Hansestadt Hamburg",
     String.downcase("0xA933f297ca605434850419951685ACeEcE2Bc88e") => "IGH Infotec AG",
+    String.downcase("0xd1E02B17524C53B337C22BF9D414bc15f933C3f0") => "itemis AG", 
 
     #GEN-X Validators
     String.downcase("0x7D765CE9B18c2B2DB8C49d663351096F2639D5aA") => "deltaDAO AG Validator 1",
