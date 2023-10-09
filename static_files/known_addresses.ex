@@ -188,7 +188,13 @@
     String.downcase("0x3BB6944351d156fAF798f952C2838ef5bac68E40") => "Centre de Visió per Computador (CVC)",
     String.downcase("0xC09c6A1d5538E7ed135d6146241c8da11e92130B") => "Freie und Hansestadt Hamburg",
     String.downcase("0xA933f297ca605434850419951685ACeEcE2Bc88e") => "IGH Infotec AG",
-    String.downcase("0xd1E02B17524C53B337C22BF9D414bc15f933C3f0") => "itemis AG", 
+    String.downcase("0xd1E02B17524C53B337C22BF9D414bc15f933C3f0") => "itemis AG",
+    String.downcase("0x4DdaE8989871DB4fAB65d62775e20c577340F8bE") => "inovex GmbH",
+    String.downcase("0xAaeA7A824cffffFFf9Dd6EC51D7D7B0abA3f205F") => "neusta aerospace GmbH",
+    String.downcase("0xf9eaebd346E9D414f4D4210CB12e43cc226038cF") => "DLR GfR mbH",
+    String.downcase("0xdbe749D939ea958aC64A5bdf163B05096E260572") => "Valispace GmbH",
+    String.downcase("0xAE823B7a6ad5b79da6d180Dbe91E7C810abAcCA4") => "grandcentrix GmbH",
+    String.downcase("0x2B9C7E0d7Be68ec6b519Dad050CD0A4bf130B6A4") => "DIO", 
 
     #GEN-X Validators
     String.downcase("0x7D765CE9B18c2B2DB8C49d663351096F2639D5aA") => "deltaDAO AG Validator 1",
