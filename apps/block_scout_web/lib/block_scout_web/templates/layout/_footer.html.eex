@@ -36,7 +36,7 @@
           -->
         </div>
         <div class="footer-legal">
-          <a href="https://portal.minimal-gaia-x.eu/imprint" alt="imprint" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Imprint") %></a>
+          <a href="https://pontus-x.eu/imprint" alt="imprint" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Imprint") %></a>
           <a href="/privacy" alt="privacy" class="footer-link"><%= gettext("Privacy") %></a>
         </div>
       </div>
