@@ -1,11 +1,11 @@
 // general
-$primary: #000094;
-$secondary: #00ffff;
-$tertiary: #b900ff;
+$primary: #004967;
+$secondary: #008baa;
+$tertiary: #9191e9;
 $additional-font: #fff;
 
 // footer
-$footer-background-color: #000094;
+$footer-background-color: #004967;
 $footer-title-color: #fff;
 $footer-text-color: #fff;
 $footer-item-disc-color: $secondary;
@@ -27,7 +27,7 @@ $dashboard-banner-gradient-start: $primary; // gradient begin
 
 $dashboard-banner-gradient-end: lighten($primary, 5); // gradient end
 
-$dashboard-banner-network-plain-container-background-color: #3444ce; // stats bg
+$dashboard-banner-network-plain-container-background-color: #002c3f; // stats bg
 
 // navigation
 .navbar {
